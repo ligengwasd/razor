@@ -58,6 +58,10 @@ class Console extends CI_Controller
      */
     function index()
     {
+        $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+        $txt = "------------";
+        fwrite($myfile, $txt);
+
         $this->common->cleanCurrentProduct();
         $this->_data['category'] = $this->product->getProductCategory();
         $this->_data['user_id'] = $this->common->getUserId();
@@ -105,6 +109,8 @@ class Console extends CI_Controller
         );
         $this->common->loadHeaderWithDateControl(lang('m_myapps'));
         $this->load->view('main_form', $this->_data);
+        fwrite($myfile, json_encode($this->_data));
+        fclose($myfile);
     }
 
     /**

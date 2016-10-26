@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
-| DATABASE CONNECTIVITY SETTINGS
+| Razor CONNECTIVITY SETTINGS
 | -------------------------------------------------------------------
 | This file will contain the settings needed to access your database.
 |
@@ -48,12 +48,12 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'HOSTNAME';
-$db['default']['username'] = 'USERNAME';
-$db['default']['password'] = 'PASSWORD';
-$db['default']['database'] = 'DATABASE';
+$db['default']['hostname'] = '192.168.199.199';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'izx2015@)!%';
+$db['default']['database'] = 'Razor';
 $db['default']['dbdriver'] = 'mysqli';
-$db['default']['dbprefix'] = 'DBPREFIX';
+$db['default']['dbprefix'] = 'razor_';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
@@ -65,12 +65,12 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 
-$db['dw']['hostname'] = 'DWHOSTNAME';
-$db['dw']['username'] = 'DWUSERNAME';
-$db['dw']['password'] = 'DWPASSWORD';
-$db['dw']['database'] = 'DWDATABASE';
+$db['dw']['hostname'] = '192.168.199.199';
+$db['dw']['username'] = 'root';
+$db['dw']['password'] = 'izx2015@)!%';
+$db['dw']['database'] = 'RazorRep';
 $db['dw']['dbdriver'] = 'mysqli';
-$db['dw']['dbprefix'] = 'DWDBPREFIX';
+$db['dw']['dbprefix'] = 'razor_';
 $db['dw']['pconnect'] = FALSE;
 $db['dw']['db_debug'] = TRUE;
 $db['dw']['cache_on'] = FALSE;

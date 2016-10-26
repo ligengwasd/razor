@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/web';
+$config['base_url']	= 'http://localhost/razor/web/';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-  $config['language']	= 'en_US';
+  $config['language']	= 'zh_CN';
 /*
 |--------------------------------------------------------------------------
 | Default Character Set
